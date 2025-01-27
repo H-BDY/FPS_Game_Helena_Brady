@@ -172,7 +172,7 @@ MonoBehaviour:
   m_VerticalAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 500
+    m_MaxSpeed: 900
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse Y
@@ -711,6 +711,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1954236157
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -52.52
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 23.97
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 66.77
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.48403838
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.4899306
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5154676
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5098706
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
+      propertyPath: m_Name
+      value: Level_Whitebox
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
 --- !u!1 &2002148562
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +784,7 @@ GameObject:
   - component: {fileID: 2002148567}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -850,7 +907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"rotation","value":{"$content":450.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"rotation","value":{"$content":900.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"speed","value":{"$content":7.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
@@ -863,3 +920,4 @@ SceneRoots:
   - {fileID: 1225643756}
   - {fileID: 2002148566}
   - {fileID: 1623865474}
+  - {fileID: 1954236157}
