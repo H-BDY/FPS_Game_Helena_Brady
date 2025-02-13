@@ -132,31 +132,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.283005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.11753
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.48403937
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.4899295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.51546866
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.50986964
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0b438fcdb3893e1448647e06e0a52193, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6832,7 +6832,7 @@ GameObject:
   - component: {fileID: 1436614954}
   - component: {fileID: 1436614955}
   m_Layer: 0
-  m_Name: Gun_Flash
+  m_Name: Gun_Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6865,16 +6865,16 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 10
+  m_Intensity: 2.5
   m_Range: 10
-  m_SpotAngle: 20
+  m_SpotAngle: 40
   m_InnerSpotAngle: 2
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.2
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -6896,7 +6896,7 @@ Light:
       e32: 0
       e33: 1
     m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
+  m_Cookie: {fileID: 2800000, guid: be0a3bc3786365a44a3e7a50e9877f87, type: 3}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
   m_RenderMode: 0
