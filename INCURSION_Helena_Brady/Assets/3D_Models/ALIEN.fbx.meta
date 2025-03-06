@@ -33,9 +33,9 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle
-      takeName: Alien|AlienAction
-      internalID: -7681922456627294882
+      name: Alien_Idle
+      takeName: 4. Textured|AlienAction.001
+      internalID: -6809230563690821424
       firstFrame: 0
       lastFrame: 80
       wrapMode: 0
@@ -62,9 +62,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Walk
-      takeName: Alien|AlienAction
-      internalID: -54299248773105985
+      name: Alien_Walk
+      takeName: 4. Textured|AlienAction.001
+      internalID: -3985049681130164781
       firstFrame: 100
       lastFrame: 130
       wrapMode: 0
@@ -91,9 +91,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Attack
-      takeName: Alien|AlienAction
-      internalID: -4059073978715336817
+      name: Alien_Attack
+      takeName: 4. Textured|AlienAction.001
+      internalID: -1769727435745609905
       firstFrame: 150
       lastFrame: 190
       wrapMode: 0
@@ -120,9 +120,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Death
-      takeName: Alien|AlienAction
-      internalID: 4666811773409460620
+      name: Alien_Death
+      takeName: 4. Textured|AlienAction.001
+      internalID: 5790889015275703081
       firstFrame: 205
       lastFrame: 235
       wrapMode: 0
@@ -131,7 +131,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
