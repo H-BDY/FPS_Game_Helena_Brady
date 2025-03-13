@@ -9671,8 +9671,7 @@ PrefabInstance:
     - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._json
       value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Enemy","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"health","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 1629884927118815346, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9768,13 +9767,17 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4468494372309626854, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
+      propertyPath: m_TagString
+      value: NPC
+      objectReference: {fileID: 0}
     - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.32221
       objectReference: {fileID: 0}
     - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.0886
+      value: 1.0307628
       objectReference: {fileID: 0}
     - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalScale.z
@@ -9786,7 +9789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.131
+      value: 0.15589
       objectReference: {fileID: 0}
     - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9818,7 +9821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
