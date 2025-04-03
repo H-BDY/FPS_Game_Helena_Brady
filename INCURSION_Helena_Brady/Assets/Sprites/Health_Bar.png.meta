@@ -106,11 +106,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Health_Bar_Cover
+      name: Health_Bar
       rect:
         serializedVersion: 2
         x: 101
@@ -124,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ba081e4526d6024597855536f1a7fcc
-      internalID: 1667450833
+      spriteID: a128ae7e4b12f094c8dcb5abd92ec466
+      internalID: -866435033
       vertices: []
       indices: 
       edges: []
@@ -134,7 +147,7 @@ TextureImporter:
       name: Health_Bar_Fill
       rect:
         serializedVersion: 2
-        x: 295
+        x: 293
         y: 545
         width: 573
         height: 65
@@ -145,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef2f1efdbf60b8448821d5b8096789f6
-      internalID: -924998483
+      spriteID: cac81b00253f4704fbe3b6ecdf7c784f
+      internalID: -685042200
       vertices: []
       indices: 
       edges: []
@@ -154,7 +167,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 28cb354f589b66f46b7efea6110be665
+    spriteID: 8ee7398fa3499c7439c9c6310ed4fa12
     internalID: 0
     vertices: []
     indices: 
@@ -162,8 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Health_Bar_Cover: 1667450833
-      Health_Bar_Fill: -924998483
+      Health_Bar: -866435033
+      Health_Bar_Fill: -685042200
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
