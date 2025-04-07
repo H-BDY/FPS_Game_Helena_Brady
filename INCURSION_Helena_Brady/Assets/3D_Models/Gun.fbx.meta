@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 110ae2f252ee98346b92c07dfdf62afd
+guid: 24f16e0f13d29c049beff0d4e52ab5b8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -34,10 +34,10 @@ ModelImporter:
     clipAnimations:
     - serializedVersion: 16
       name: Idle
-      takeName: Armature|ArmatureAction
-      internalID: 4781951162920444690
+      takeName: Gun|GunAction
+      internalID: 8403445404769980326
       firstFrame: 0
-      lastFrame: 60
+      lastFrame: 58
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -63,17 +63,17 @@ ModelImporter:
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Shoot
-      takeName: Armature|ArmatureAction
-      internalID: -1246731831762816583
-      firstFrame: 67
-      lastFrame: 79
+      takeName: Gun|GunAction
+      internalID: -7008238815017620709
+      firstFrame: 58
+      lastFrame: 63
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
