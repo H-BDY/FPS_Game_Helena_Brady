@@ -268,11 +268,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8826a21c0e35e8848a8020fe7124ea41, type: 3}
   m_PrefabInstance: {fileID: 1273238515}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &39657298 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4039775944721716392, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-  m_PrefabInstance: {fileID: 1517599023}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &55148370 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4039775944721716392, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
@@ -353,6 +348,102 @@ MonoBehaviour:
     - {fileID: 3878748841323687363, guid: 3424c3be1d903964db06c2ef0a8a7462, type: 3}
     - {fileID: 258233219}
     - {fileID: 1693166911}
+--- !u!82 &79571407
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79571399}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: de97f88ecaea9dc409a6a1674f122000, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &105523892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -584,7 +675,12 @@ PrefabInstance:
     - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._json
       value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Enemy","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathFX","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1629884927118815346, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -658,11 +754,12 @@ PrefabInstance:
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"startPosition","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"typeHandle":{"Identification":"UnityEngine.Vector3,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Health","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Anim","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
-        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathFX","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
@@ -772,7 +869,12 @@ PrefabInstance:
     - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._json
       value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Enemy","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathFX","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1629884927118815346, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -846,11 +948,12 @@ PrefabInstance:
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"startPosition","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"typeHandle":{"Identification":"UnityEngine.Vector3,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Health","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Anim","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
-        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathFX","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
@@ -1368,11 +1471,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._json
-      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Enemy","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-      objectReference: {fileID: 0}
     - target: {fileID: 1629884927118815346, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalPosition.x
       value: -33.12
@@ -1413,150 +1511,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.y
-      value: 1.0031565
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.z
-      value: 0.66816044
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.x
-      value: 0.0000000019136208
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.y
-      value: 0.0015784001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.z
-      value: 0.049536735
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._json
-      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Player","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"NavMeshAgent","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.AI.NavMeshAgent,
-        UnityEngine.AIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Dist","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"startPosition","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"typeHandle":{"Identification":"UnityEngine.Vector3,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Health","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Anim","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
-        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._objectReferences.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
       value: 
       objectReference: {fileID: 2002148562}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._objectReferences.Array.data[1]
-      value: 
-      objectReference: {fileID: 1153264162}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._objectReferences.Array.data[2]
-      value: 
-      objectReference: {fileID: 1735273413}
-    - target: {fileID: 3180889518318087126, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3180889518318087126, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4468494372309626854, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_TagString
-      value: NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.32221
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.0307628
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.34102
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.018
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.15589
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.389
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.x
-      value: 0.59972614
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.y
-      value: 0.11489667
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.z
-      value: 1.2432371
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.x
-      value: -0.07330802
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.y
-      value: 0.4531651
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.z
-      value: -0.12161638
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
       value: Enemy (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_TagString
-      value: NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 9079037088808741452, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: -4475745287206518617, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1153264159}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
 --- !u!95 &331921759 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4039775944721716392, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
   m_PrefabInstance: {fileID: 864646861}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &332494374 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4039775944721716392, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-  m_PrefabInstance: {fileID: 486608796}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &366469845 stripped
 GameObject:
@@ -2009,11 +1980,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._json
-      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Enemy","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-      objectReference: {fileID: 0}
     - target: {fileID: 1629884927118815346, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4
@@ -2054,140 +2020,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.y
-      value: 1.0031565
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.z
-      value: 0.66816044
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.x
-      value: 0.0000000019136208
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.y
-      value: 0.0015784001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.z
-      value: 0.049536735
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._json
-      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Player","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"NavMeshAgent","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.AI.NavMeshAgent,
-        UnityEngine.AIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Dist","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"startPosition","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"typeHandle":{"Identification":"UnityEngine.Vector3,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Health","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Anim","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
-        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._objectReferences.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
       value: 
       objectReference: {fileID: 2002148562}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._objectReferences.Array.data[1]
-      value: 
-      objectReference: {fileID: 1124085589}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._objectReferences.Array.data[2]
-      value: 
-      objectReference: {fileID: 332494374}
-    - target: {fileID: 3180889518318087126, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3180889518318087126, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4468494372309626854, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_TagString
-      value: NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.32221
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.0307628
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.34102
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.018
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.15589
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.389
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.x
-      value: 0.59972614
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.y
-      value: 0.11489667
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.z
-      value: 1.2432371
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.x
-      value: -0.07330802
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.y
-      value: 0.4531651
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.z
-      value: -0.12161638
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
       value: Enemy (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_TagString
-      value: NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 9079037088808741452, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: -4475745287206518617, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1124085586}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
 --- !u!1 &492215958 stripped
 GameObject:
@@ -2787,7 +2631,12 @@ PrefabInstance:
     - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._json
       value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Enemy","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathFX","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1629884927118815346, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2861,11 +2710,12 @@ PrefabInstance:
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"startPosition","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"typeHandle":{"Identification":"UnityEngine.Vector3,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Health","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Anim","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
-        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathFX","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
@@ -3155,7 +3005,12 @@ PrefabInstance:
     - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._json
       value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Enemy","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathFX","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1629884927118815346, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3229,11 +3084,12 @@ PrefabInstance:
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"startPosition","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"typeHandle":{"Identification":"UnityEngine.Vector3,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Health","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Anim","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
-        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathFX","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
@@ -3247,6 +3103,10 @@ PrefabInstance:
       propertyPath: _data._objectReferences.Array.data[2]
       value: 
       objectReference: {fileID: 624409855}
+    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
+      propertyPath: _data._objectReferences.Array.data[3]
+      value: 
+      objectReference: {fileID: 5107596560065173868, guid: fa45fce5107398e43890cadef0ff6834, type: 3}
     - target: {fileID: 3180889518318087126, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -3487,7 +3347,12 @@ PrefabInstance:
     - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._json
       value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Enemy","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathFX","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1629884927118815346, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3561,11 +3426,12 @@ PrefabInstance:
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"startPosition","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"typeHandle":{"Identification":"UnityEngine.Vector3,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Health","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Anim","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
-        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathFX","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
@@ -3766,11 +3632,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._json
-      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Enemy","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-      objectReference: {fileID: 0}
     - target: {fileID: 1629884927118815346, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.4
@@ -3811,140 +3672,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.y
-      value: 1.0031565
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.z
-      value: 0.66816044
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.x
-      value: 0.0000000019136208
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.y
-      value: 0.0015784001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.z
-      value: 0.049536735
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._json
-      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Player","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"NavMeshAgent","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.AI.NavMeshAgent,
-        UnityEngine.AIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Dist","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"startPosition","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"typeHandle":{"Identification":"UnityEngine.Vector3,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Health","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Anim","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
-        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._objectReferences.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
       value: 
       objectReference: {fileID: 2002148562}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._objectReferences.Array.data[1]
-      value: 
-      objectReference: {fileID: 1039363727}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._objectReferences.Array.data[2]
-      value: 
-      objectReference: {fileID: 1221360123}
-    - target: {fileID: 3180889518318087126, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3180889518318087126, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4468494372309626854, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_TagString
-      value: NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.32221
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.0307628
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.34102
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.018
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.15589
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.389
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.x
-      value: 0.59972614
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.y
-      value: 0.11489667
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.z
-      value: 1.2432371
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.x
-      value: -0.07330802
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.y
-      value: 0.4531651
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.z
-      value: -0.12161638
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_TagString
-      value: NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 9079037088808741452, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: -4475745287206518617, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1039363724}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
 --- !u!1 &922489951 stripped
 GameObject:
@@ -4020,7 +3759,12 @@ PrefabInstance:
     - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._json
       value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Enemy","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathFX","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1629884927118815346, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4094,11 +3838,12 @@ PrefabInstance:
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"startPosition","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"typeHandle":{"Identification":"UnityEngine.Vector3,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Health","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Anim","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
-        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathFX","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
@@ -4775,80 +4520,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036701803}
   m_CullTransparentMesh: 1
---- !u!1 &1039363723 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-  m_PrefabInstance: {fileID: 902928187}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1039363724
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1039363723}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!195 &1039363727 stripped
-NavMeshAgent:
-  m_CorrespondingSourceObject: {fileID: 8742201619572725666, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-  m_PrefabInstance: {fileID: 902928187}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1124085585 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-  m_PrefabInstance: {fileID: 486608796}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1124085586
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124085585}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!195 &1124085589 stripped
-NavMeshAgent:
-  m_CorrespondingSourceObject: {fileID: 8742201619572725666, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-  m_PrefabInstance: {fileID: 486608796}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1124633634
 GameObject:
   m_ObjectHideFlags: 0
@@ -4976,43 +4647,6 @@ NavMeshAgent:
   m_CorrespondingSourceObject: {fileID: 8742201619572725666, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
   m_PrefabInstance: {fileID: 933763633}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1153264158 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-  m_PrefabInstance: {fileID: 307820632}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1153264159
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1153264158}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!195 &1153264162 stripped
-NavMeshAgent:
-  m_CorrespondingSourceObject: {fileID: 8742201619572725666, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-  m_PrefabInstance: {fileID: 307820632}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1160391195
 GameObject:
   m_ObjectHideFlags: 0
@@ -5100,7 +4734,12 @@ PrefabInstance:
     - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._json
       value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Enemy","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathFX","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1629884927118815346, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5174,11 +4813,12 @@ PrefabInstance:
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"startPosition","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"typeHandle":{"Identification":"UnityEngine.Vector3,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Health","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Anim","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
-        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathFX","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
@@ -5372,52 +5012,10 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1366091496}
   m_SourcePrefab: {fileID: 100100000, guid: c7368584451d014409c095644a1c56d8, type: 3}
---- !u!1 &1217715290 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-  m_PrefabInstance: {fileID: 1517599023}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1217715291
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217715290}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!195 &1217715294 stripped
-NavMeshAgent:
-  m_CorrespondingSourceObject: {fileID: 8742201619572725666, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-  m_PrefabInstance: {fileID: 1517599023}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1220143517 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 828342067920472930, guid: 940640002c5e68f428c03b689d7f7999, type: 3}
   m_PrefabInstance: {fileID: 105523892}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1221360123 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4039775944721716392, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-  m_PrefabInstance: {fileID: 902928187}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1221621267
 GameObject:
@@ -5951,6 +5549,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 518600cec552c2141b845156abfb4c76, type: 3}
       insertIndex: -1
       addedObject: {fileID: 79571403}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 518600cec552c2141b845156abfb4c76, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 79571407}
   m_SourcePrefab: {fileID: 100100000, guid: 518600cec552c2141b845156abfb4c76, type: 3}
 --- !u!1001 &1356631443
 PrefabInstance:
@@ -6381,11 +5982,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._json
-      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Enemy","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-      objectReference: {fileID: 0}
     - target: {fileID: 1629884927118815346, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalPosition.x
       value: 43.4
@@ -6426,140 +6022,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.y
-      value: 1.0031565
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.z
-      value: 0.66816044
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.x
-      value: 0.0000000019136208
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.y
-      value: 0.0015784001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.z
-      value: 0.049536735
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641402207597792178, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._json
-      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Player","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"NavMeshAgent","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.AI.NavMeshAgent,
-        UnityEngine.AIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Dist","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"startPosition","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"typeHandle":{"Identification":"UnityEngine.Vector3,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Health","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Anim","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
-        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._objectReferences.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._objectReferences.Array.data[0]
-      value: 
-      objectReference: {fileID: 2002148562}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._objectReferences.Array.data[1]
-      value: 
-      objectReference: {fileID: 1217715294}
-    - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: _data._objectReferences.Array.data[2]
-      value: 
-      objectReference: {fileID: 39657298}
-    - target: {fileID: 3180889518318087126, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3180889518318087126, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4468494372309626854, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_TagString
-      value: NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.32221
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.0307628
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.34102
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.018
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.15589
-      objectReference: {fileID: 0}
-    - target: {fileID: 6063819300600479887, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.389
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.x
-      value: 0.59972614
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.y
-      value: 0.11489667
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Size.z
-      value: 1.2432371
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.x
-      value: -0.07330802
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.y
-      value: 0.4531651
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Center.z
-      value: -0.12161638
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_TagString
-      value: NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 9079037088808741452, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: -4475745287206518617, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1217715291}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
 --- !u!95 &1605522197 stripped
 Animator:
@@ -11674,11 +11144,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!95 &1735273413 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4039775944721716392, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
-  m_PrefabInstance: {fileID: 307820632}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1833898236 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c7368584451d014409c095644a1c56d8, type: 3}
@@ -11723,6 +11188,7 @@ GameObject:
   - component: {fileID: 1841759570}
   - component: {fileID: 1841759572}
   - component: {fileID: 1841759571}
+  - component: {fileID: 1841759573}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -11823,6 +11289,102 @@ MonoBehaviour:
     _objectReferences:
     - {fileID: 409356914}
     - {fileID: 857161495}
+--- !u!82 &1841759573
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841759567}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a3049b75d683ebf4da18c3fe5f5f0a98, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1943340838 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c7368584451d014409c095644a1c56d8, type: 3}
@@ -12032,7 +11594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"rotation","value":{"$content":900.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"rotation","value":{"$content":200.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"speed","value":{"$content":7.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Death","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.UI.Image,
       UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathDelay","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
@@ -12145,7 +11707,12 @@ PrefabInstance:
     - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._json
       value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Enemy","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathFX","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1369710536298540526, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1629884927118815346, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12219,11 +11786,12 @@ PrefabInstance:
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"startPosition","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"typeHandle":{"Identification":"UnityEngine.Vector3,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Health","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Anim","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
-        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathFX","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2622268847577108922, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
