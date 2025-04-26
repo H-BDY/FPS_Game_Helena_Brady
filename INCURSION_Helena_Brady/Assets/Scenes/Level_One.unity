@@ -6631,7 +6631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6173565160262445612, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
-      value: Alien
+      value: 4. Textured
       objectReference: {fileID: 0}
     - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Size.x
@@ -7040,7 +7040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6173565160262445612, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
-      value: Alien
+      value: 4. Textured
       objectReference: {fileID: 0}
     - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Size.x
@@ -7592,7 +7592,7 @@ MonoBehaviour:
   m_VerticalAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 200
+    m_MaxSpeed: 150
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse Y
@@ -7881,7 +7881,7 @@ PrefabInstance:
       objectReference: {fileID: 2002148562}
     - target: {fileID: 6173565160262445612, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
-      value: Alien
+      value: 4. Textured
       objectReference: {fileID: 0}
     - target: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
@@ -13846,7 +13846,7 @@ PrefabInstance:
       objectReference: {fileID: 2002148562}
     - target: {fileID: 6173565160262445612, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
-      value: Alien
+      value: 4. Textured
       objectReference: {fileID: 0}
     - target: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
@@ -14052,7 +14052,7 @@ PrefabInstance:
       objectReference: {fileID: 2002148562}
     - target: {fileID: 6173565160262445612, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
-      value: Alien
+      value: 4. Textured
       objectReference: {fileID: 0}
     - target: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
@@ -15859,7 +15859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6173565160262445612, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
-      value: Alien
+      value: 4. Textured
       objectReference: {fileID: 0}
     - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Size.x
@@ -16361,7 +16361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6173565160262445612, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
-      value: Alien
+      value: 4. Textured
       objectReference: {fileID: 0}
     - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Size.x
@@ -17108,7 +17108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6173565160262445612, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
-      value: Alien
+      value: 4. Textured
       objectReference: {fileID: 0}
     - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Size.x
@@ -17544,7 +17544,7 @@ PrefabInstance:
       objectReference: {fileID: 2002148562}
     - target: {fileID: 6173565160262445612, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
-      value: Alien
+      value: 4. Textured
       objectReference: {fileID: 0}
     - target: {fileID: 8805893870732091228, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
@@ -18027,7 +18027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6173565160262445612, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
-      value: Alien
+      value: 4. Textured
       objectReference: {fileID: 0}
     - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Size.x
@@ -19865,7 +19865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6173565160262445612, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
-      value: Alien
+      value: 4. Textured
       objectReference: {fileID: 0}
     - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Size.x
@@ -29297,7 +29297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"rotation","value":{"$content":200.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"rotation","value":{"$content":150.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"speed","value":{"$content":7.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Death","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.UI.Image,
       UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"deathDelay","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
@@ -34984,7 +34984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6173565160262445612, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
-      value: Alien
+      value: 4. Textured
       objectReference: {fileID: 0}
     - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Size.x
@@ -35228,7 +35228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6173565160262445612, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Name
-      value: Alien
+      value: 4. Textured
       objectReference: {fileID: 0}
     - target: {fileID: 7416236520250881846, guid: f21b3c5a95ad4124f9a1a2e6457035be, type: 3}
       propertyPath: m_Size.x
